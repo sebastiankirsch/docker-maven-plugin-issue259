@@ -2,7 +2,7 @@
 <configuration>
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d %-5level %logger{35} - %msg %n</pattern>
+            <pattern>%d %-5level [%-16.16t] %logger{35} - %msg %n</pattern>
         </encoder>
     </appender>
     <root level="info">
