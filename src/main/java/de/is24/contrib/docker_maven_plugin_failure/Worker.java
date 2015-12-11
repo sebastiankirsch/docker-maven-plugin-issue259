@@ -26,8 +26,8 @@ public class Worker implements SmartLifecycle {
                     }
                     if (--k < 0) break;
                     else stringBuilder.append("\n");
-                    logger.info(stringBuilder.toString());
                 }
+                logger.info(stringBuilder.toString());
             }
             Thread.sleep(512);
         }
