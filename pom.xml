@@ -16,6 +16,7 @@
     <packaging>jar</packaging>
 
     <properties>
+        <docker.image.jre>eclipse-temurin:8-jre-alpine</docker.image.jre>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,7 +46,7 @@
                             <alias>distractor</alias>
                             <name>is24-contrib/${project.artifactId}</name>
                             <build>
-                                <from>java:openjdk-8-jre</from>
+                                <from>eclipse-temurin:8-jre-alpine</from>
                                 <assembly>
                                     <inline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                                             xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
@@ -75,7 +76,7 @@
                             <alias>app</alias>
                             <name>is24-contrib/${project.artifactId}</name>
                             <build>
-                                <from>java:openjdk-8-jre</from>
+                                <from>${docker.image.jre}</from>
                                 <assembly>
                                     <inline xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                                             xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
