@@ -13,13 +13,7 @@
     <groupId>de.is24.contrib</groupId>
     <artifactId>docker-maven-plugin-failure</artifactId>
     <version>1-SNAPSHOT</version>
-
     <packaging>jar</packaging>
-
-    <organization>
-        <name>Immobilien Scout GmbH</name>
-        <url>http://www.immobilienscout24.de/</url>
-    </organization>
 
     <build>
         <plugins>
