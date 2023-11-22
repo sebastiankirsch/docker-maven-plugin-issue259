@@ -10,7 +10,7 @@
         <version>1.3.0.RELEASE</version>
     </parent>
 
-    <groupId>de.is24.contrib</groupId>
+    <groupId>net.tcc.contrib</groupId>
     <artifactId>docker-maven-plugin-failure</artifactId>
     <version>1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -44,7 +44,7 @@
                     <images>
                         <image>
                             <alias>distractor</alias>
-                            <name>is24-contrib/${project.artifactId}</name>
+                            <name>tcc-contrib/${project.artifactId}</name>
                             <build>
                                 <from>eclipse-temurin:8-jre-alpine</from>
                                 <assembly>
@@ -74,7 +74,7 @@
                         </image>
                         <image>
                             <alias>app</alias>
-                            <name>is24-contrib/${project.artifactId}</name>
+                            <name>tcc-contrib/${project.artifactId}</name>
                             <build>
                                 <from>${docker.image.jre}</from>
                                 <assembly>

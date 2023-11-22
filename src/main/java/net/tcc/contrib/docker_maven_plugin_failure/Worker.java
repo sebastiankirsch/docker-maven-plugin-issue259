@@ -1,4 +1,4 @@
-package de.is24.contrib.docker_maven_plugin_failure;
+package net.tcc.contrib.docker_maven_plugin_failure;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

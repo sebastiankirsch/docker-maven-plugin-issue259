@@ -1,4 +1,4 @@
-package de.is24.contrib.docker_maven_plugin_failure;
+package net.tcc.contrib.docker_maven_plugin_failure;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
