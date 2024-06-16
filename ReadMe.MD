@@ -1,4 +1,4 @@
-# :information_source: Since security issues keep popping up and keeping things up to date here doesn't seem to be worth the effort, this repository has been archived. 
+# :information_source: Since security issues keep popping up and the issue doesn't seem to adressed, this repository has been archived. 
 
 Example application that tries to replicate [fabric8io/docker-maven-plugin#259](https://github.com/fabric8io/docker-maven-plugin/issues/259)<sup>*</sup>.
 
